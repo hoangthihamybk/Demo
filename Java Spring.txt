@@ -1,0 +1,45 @@
+* Cơ bản:
+
+1. Tìm hiểu annotation (nếu chưa biết).
+2. Tìm hiểu các annotation chính trong spring :
+
+- @Entity, @Service, @Bean, @Configuration, @EnableWebSecurity, @EnableGlobalMethodSecurity, @Component, @Autowired
+- Config 1 table với @Table, @Id, @Column
+- @Controller (nếu viết dạng MVC tức là View đi kèm với spring (jsp, thymeleaf...).
+- @Restcontroller (nếu viết dạng REST API).
+- Tìm hiểu cách dùng các hàm có sẵn trong jpa (trước đây thường dùng Hibernate trong spring MVC) : JPA là một interface cung cấp các hàm để thao tác với database. Hibernate trước đây thực chất là một cách implement lại từ JPA.
+- Thực tế, các câu query đôi khi tương đối phức tạp,s đòi hỏi phải viết query thuần vì thế : Tìm hiểu cách viết 1 câu query thuần trong spring với:
+cách 1: Dùng @Query . Cách này dùng khi câu query không quá phức tạp, không quá dài
+cách 2: Custom query: Nên dùng khi câu query quá phức tạp. Search : "custom query string with jpa"
+
+3. Tìm hiểu các lib hay dùng, một số gợi ý:
+
++ common lang3 : Lib này dùng để check null, empty cho array, string...rất tiện
++ jackson: lib này dùng để map một class thành json/xml. Ví dụ class A {string field1, string field2 } sau khi map :
+(json)
+{
+field1: '',
+field2: ''
+}
+
+(xml)
+<xml>
+<fiel1>
+</fiel2>
+</xml
+
+
++ lombok: Cái này rút gọn code trong class model. Ví dụ thay vì phải viết các hàm get/set thì chỉ cần dùng @Data. Hàm contructor không/có tham số: @NoArgsConstructor/@AllArgsConstructor
+Biến class thành mẫu builder. @Builder(mẫu này dùng khi mà số lượng attribute tăng lên, việc khởi tạo bằng contructor là rất dài vì phải truyền số lượng lớn các attribute vào, khi đó dùng mẫu builder này
+
+
+4. Viết một ứng dụng CRUD đơn giản với spring boot với các kiến thức phía trên
+5. Sửa ứng dụng phía trên có thể chạy theo dạng migate DB (migate tức là ứng dụng sẽ chạy lại tất cả các thay đổi của DB(thêm, sửa, xóa các bảng, cột...). Trong thực tế chúng ta hay triển khai như thế để quản lý được version thay đổi của DB. Lib : org.flywaydb. Từ khóa search: "Spring boot migate with flywaydb"
+
+* Nâng cao:
+6. Authen cho các API phía trên với JWT (Tìm hiểu JWT là gì), lib sử dụng "io.jsonwebtoken", cách phân quyền role cho các API trên (cách config như nào). Searh: "spring boot auth with JWT"
+
+* Mở rộng:
+
+7. Đăng nhập với google, facebook, github bằng "spring social".
+8. Nghiên cứu cách deploy spring lên cloud (AWS, Google Cloud, Aruze...) với "spring cloud".
