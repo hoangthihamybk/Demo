@@ -1,0 +1,20 @@
+all Sau khi anh Hải và bạn Đạt ai làm xong spring boot + vue thì sẽ next tới phần dễ hơn là python :D. Thì đây là follow cho python. Thì mọi người nếu ai đã xong phần trước có thể bắt đầu làm phần này, còn không thì tiếp tục hoàn thiện phần trước đã. Cuối ngày mọi người gửi mail về tiến độ tìm hiểu + source (khi bắt đầu sang phần code) cho anh Thọ, anh Dũng về tiến độ và cc cho em/anh nhé.
+
+Cú pháp + Môi trường (5 ngày):
+1. Dựng môi trường python, nghiên cứu cách dùng tool quản lý lib cho python ("pip" or "annaconda") (1 ngày)
+2. Nghiên cứu syntax cơ bản (khai báo, vòng lặp...), các cấu trúc dữ liệu thường dùng (array, tuple, dictionary, set...). Trả lời các câu hỏi sau (2 ngày):
+
+- Sự khác nhau của array và tuple, trường hợp nào thì nên dùng array, trường hợp nào thì nên dùng tuple.
+- Các dùng chỉ số âm (-), dương (+) trong array, tuple
+- Các cast từ array sang set.
+
+3. Nghiên cứu về đối tượng Iterator, Gennerator. Trả lời câu hỏi sau (1 ngày):
+- Sự giống và khác nhau của 2 đối tượng trên
+- Cách tạo ra gennerator, từ đó đưa ra nhận xét trường hợp dùng của 2 từ khóa "return" và "yield" ("yield" đọc là "yêu")
+
+4. Nghiên cứu cách viết một hàm Decorator, cho ví dụ cụ thể (0.5 ngày).
+5. Nghiên cứu cách viết hướng đối tượng (class) trong python, cho ví dụ cụ thể (0.5 ngày).
+
+Sản phẩm (4 ngày):
+- Nghiên cứu framework "chalice", document có thể tham khảo ở link sau: https://chalice.readthedocs.io/en/latest/ (1 ngày)
+- Tạo CRUD + authen (JWT) REST API với giống bài tập Spring boot vừa rồi với "chalice", database và lib connect tùy chọn (khuyến khích cách tổ chức code theo hướng đối tượng) (3 ngày)

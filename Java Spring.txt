@@ -43,3 +43,6 @@ Biến class thành mẫu builder. @Builder(mẫu này dùng khi mà số lượ
 
 7. Đăng nhập với google, facebook, github bằng "spring social".
 8. Nghiên cứu cách deploy spring lên cloud (AWS, Google Cloud, Aruze...) với "spring cloud".
+
+- Link học Spring boot: 
+https://loda.me/spring-boot-2-autowired-primary-qualifier-loda1557561089057/
